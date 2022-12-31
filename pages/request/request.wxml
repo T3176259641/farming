@@ -1,0 +1,25 @@
+<view class="parents">
+    <view class="childs">
+        <view class="childs_img">
+            <view class="childs_img2 margin_style">
+                <image src="/pages/images/chanpin.png"></image>
+            </view>
+        </view>
+        <view class="childs_img">
+            <view class="tx">请授权小程序获取您的头像和昵称进行登录</view>
+            <view class="tx02">Need authorization for</view>
+            <view class="tx02">your avatar and nickname to login.</view>
+        </view>
+        <view class="select_style">
+            <view class="select_sl">
+                <navigator url="/pages/index/index" open-type="switchTab"><view class="btn_style">
+                    <image src="/pages/images/wrong.png" style="height: 40rpx;width: 40rpx;"></image>
+                </view>
+                </navigator>
+                <view class="btn_style1" bindtap="login">
+                    <image src="/pages/images/right.png" style="height: 40rpx;width: 40rpx;"></image><text>允许登录</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,31 @@
+<!--pages/detail/detail.wxml-->
+
+<view class="list" wx:for="{{carts}}" data-title="{{item.title}}" data-price01="{{item.price}}" data-num="{{item.guig}}"  data-math="{{item.num}}"  data-weight="{{item.zhl}}"  bindtap="buy">
+  <view class="choose">
+    <view class="option {{item.selected == true?'selected':'selected1'}}"data-num="{{index}}" bindtap="selected"></view>
+  </view>
+  <view class="imgages">
+    <image class="navimg" src="{{item.src}}"></image>
+  </view>
+  <view class="info">
+    <text class="title">{{item.title}}</text>
+    <text class="specify">重量：<text>{{item.zhl}}</text>kg; 规格：<text>{{item.guig}}</text>箱</text>
+    <text class="charge">￥<text>{{item.price}}</text></text>
+    <view class="buy-num">
+      <text class="add" bindtap="addNum" data-num="{{index}}">+</text>
+      <text class="goodsNum">{{item.num}}</text>
+      <text class="sub" bindtap="subNum" data-num="{{index}}">-</text>
+    </view>
+  </view>
+</view>
+<!--底部-->
+<view class="footer">
+  <view class="allchoice choose">
+    <view class="option {{selectAll == true?'selectedall':'selected1'}}" bindtap="selectedAll"></view>全选
+  </view>
+  <view class="gotonext" data-price01="{{totalPrice}}" data-num="{{selectNum}}" bindtap="buy" data-yunfei="不含运费,已优惠50.00">结算({{selectNum}}件)</view>
+  <view class="total">总计:
+    <text class="money">￥{{totalPrice}}</text>
+    <text class="other">不含运费,已优惠50.00</text>
+  </view>
+</view>

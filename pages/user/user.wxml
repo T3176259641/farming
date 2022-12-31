@@ -1,0 +1,99 @@
+<navigator url="/pages/request/request" wx:if="{{flag1}}"><view><button>用户登录</button></view></navigator>
+<view class="viewtop" wx:if="{{flag2}}">
+    <view class="top1">
+      <view class="view1"><image src="{{image}}"></image></view>
+      <view class="view2">
+        <view class="text">{{Name}}</view>
+        <view class="buttontop">
+          <view class="button1">分享值></view>
+          <view class="button2">家庭号></view>
+        </view>
+      </view>
+      <view class="view3"><navigator url="/pages/setting/setting"><image src="/pages/images/set.png"></image></navigator></view>
+    </view>
+    <view class="top2">
+      <view class="view4">
+        <text>1</text>
+        <text class="textshow">商品收藏</text>
+      </view>
+      <view class="view5">
+        <text>6</text>
+        <text class="textshow">店铺收藏</text>
+      </view>
+      <view class="view6">
+        <text>6</text>
+        <text class="textshow">我的足迹</text>
+      </view>
+    </view>
+</view>
+<view class="bottom">
+  <view class="bottom1">
+    <view class="bottomtap">
+      <view class="viewimages">
+        <view class="imageview"><image src="/pages/images/payment.png"></image></view>
+        <view class="textview"><text>待付款</text></view>
+      </view>
+      <view class="viewimages">
+        <view class="imageview"><image src="/pages/images/wait.png"></image></view>
+        <view class="textview"><text>待收货</text></view>
+      </view>
+      <view class="viewimages">
+        <view class="imageview"><image src="/pages/images/evaluation.png"></image></view>
+        <view class="textview"><text>待评价</text></view>
+      </view>
+      <view class="viewimages">
+        <view class="imageview"><image src="/pages/images/sales.png"></image></view>
+        <view class="textview"><text>退款/售后</text></view>
+      </view>
+  </view>
+      <view class="bottomorder">
+      <image src="/pages/images/order.png"></image>
+      <view class="bottomordertext"><text>全部订单</text></view>
+      </view>
+  </view>
+    <view class="bottom2">
+      <view class="bottomtap">
+      <view class="viewimages">
+        <view class="imageview">2</view>
+        <view class="textview"><text>优惠卷</text></view>
+      </view>
+      <view class="viewimages">
+        <view class="imageview">0</view>
+        <view class="textview"><text>账户余额</text></view>
+      </view>
+      <view class="viewimages">
+        <view class="imageview">10</view>
+        <view class="textview"><text>农豆</text></view>
+      </view>
+      <view class="viewimages">
+        <view class="imageview">2</view>
+        <view class="textview"><text>红包</text></view>
+      </view>
+  </view>
+      <view class="bottomorder">
+        <image src="/pages/images/assets.png"></image>
+        <view class="bottomordertext"><text>我的资产</text></view>
+      </view>
+    </view>
+    <view class="bottom3">
+      <view class="interactive"><text>游戏与互动</text></view>
+    <view class="bottomtap1">
+      <view class="viewimages">
+        <view class="imageviewfruit"><image src="/pages/images/fruit.png"></image></view>
+        <view class="textview"><text>免费水果</text></view>
+      </view>
+      <view class="viewimages">
+        <view class="imageviewfruit1"><image src="/pages/images/cash.png"></image></view>
+        <view class="textview"><text>领现金</text></view>
+      </view>
+      <view class="viewimages">
+        <view class="imageviewfruit2"><image src="/pages/images/volume.png"></image></view>
+        <view class="textview"><text>天天领劵</text></view>
+      </view>
+      <view class="viewimages">
+        <view class="imageviewfruit3"><image src="/pages/images/bean.png"></image></view>
+        <view class="textview"><text>领农豆</text></view>
+      </view>
+  </view>    
+  </view>
+</view>

@@ -1,0 +1,85 @@
+<!--商品幻灯片-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" class="banner"
+  duration="{{duration}}" circular="{{duration}}">
+    <swiper-item>
+      <image src="{{img01}}" class="slide-image" mode="aspectFill" bindtap="previewImage" />
+    </swiper-item>
+    <swiper-item>
+      <image src="{{img02}}" class="slide-image" mode="aspectFill" bindtap="previewImage" />
+    </swiper-item>
+    <swiper-item>
+      <image src="{{img03}}" class="slide-image" mode="aspectFill" bindtap="previewImage" />
+    </swiper-item>
+</swiper>
+<!--商品幻灯片 end-->
+<view class="info-price clear">
+  <view class='price'>￥{{price}}</view>
+  <view class='fenxiang'>
+    <button class='fxbtn' open-type="share">
+      <view style='height:20px;margin-top:8px;'>
+        <image src='http://nc.mofcom.gov.cn//tc/20210105093044493649.jpg' mode="aspectFill"></image>
+      </view>
+      <view>分享</view>
+    </button>
+  </view>
+</view>
+<view class="info-title">
+  <text>{{goods_info}}</text>
+</view>
+<view style="border-top:1px solid #F6F6F6;background: #fff; padding:5px 15px;">
+  <view class="clearfix flex grey gridXt">
+    <text class="sub">
+      <block wx:if='{{1}}'>运费：包邮</block>
+      <block wx:else>运费：100</block>
+    </text>
+    <text class="sub">库存：{{kucun}}</text>
+    <text class="sub">销量：{{xiaoliang}}</text>
+  </view>
+</view>
+<block wx:if="{{1}}">
+  <!--评价-->
+  <view class='pj_box'>
+    <view style="height:40px;line-height: 40px;border-bottom:1px solid #f5f5f5;">
+      <view style='float:left;'>商品评价</view>
+      <view style='float:right;font-size:12px;color:#A2A2A2;'>
+        <navigator url="pjList?id={{goods_id}}">查看全部</navigator>
+      </view>
+      <view class='clear'></view>
+    </view>
+    <block wx:for="{{pjDataList}}" wx:for-item="item" wx:key="pj">
+      <view class="list_item">
+        <view class='pj_u_info clear'>
+          <view class='header_img'>
+            <image src="{{item.headpic}}" mode="aspectFit"></image>
+          </view>
+          <view class='name'>{{item.author}}</view>
+          <view class='time'>{{item.add_time}}</view>
+        </view>
+        <view class='pj_cont'>
+          {{item.content}}
+        </view>
+      </view>
+    </block>
+  </view>
+</block>
+<!--商品详情-->
+<view class='details_box'>
+  <view style="height:40px;line-height: 40px;border-bottom:1px solid #f5f5f5;">
+    <view>商品详情</view>
+  </view>
+  <view style='padding:10px 0px;'>
+    <view class="wxParse">{{content}}</view>
+  </view>
+</view>
+
+<!--底部浮动 start-->
+<view class="foot-nav mt15">
+  <view class="flex con gridXt tc">  
+    <view class="add-cart0 sub0 f160">
+      <button class="add-cart-btn0" bindtap='buy0'>加入购物车</button>
+    </view>
+    <view class="add-cart sub f16">
+      <button class="add-cart-btn" bindtap='buy' data-price="{{price}}" data-title="{{goods_info}}">立即购买</button>
+    </view>
+  </view>
+</view>

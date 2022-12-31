@@ -1,0 +1,53 @@
+{
+  "lazyCodeLoading": "requiredComponents",
+  "pages":[
+    "pages/index/index",
+    "pages/setting/setting",
+    "pages/logs/logs",
+    "pages/buy/buy",
+    "pages/recommend/recommend",
+    "pages/search/search",
+    "pages/detailled/detailled",
+    "pages/shoppingcar/shoppingcar",
+    "pages/request/request",
+    "pages/user/user"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#E8FFF5",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#989898",
+        "selectedColor": "#93FF93",
+        "list":[
+            {
+                "pagePath": "pages/index/index",
+                "selectedIconPath": "/pages/images/home1.png",
+                "text": "首页",
+                "iconPath": "/pages/images/home.png"
+            },
+            {
+                "pagePath": "pages/recommend/recommend",
+                "selectedIconPath": "/pages/images/shopping1.png",
+                "text": "推荐",
+                "iconPath": "/pages/images/shopping.png"
+            },
+            {
+              "pagePath": "pages/shoppingcar/shoppingcar",
+              "selectedIconPath": "/pages/images/shoppingcar1.png",
+              "text": "购物车",
+              "iconPath": "/pages/images/shoppingcar.png"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "selectedIconPath": "/pages/images/user1.png",
+                "text": "我的",
+                "iconPath": "/pages/images/user.png"
+            }
+        ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

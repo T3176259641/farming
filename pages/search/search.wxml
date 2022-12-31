@@ -1,0 +1,16 @@
+<view class="inputsearch">
+  <input style="width: 670rpx; height: 58rpx; display: block; box-sizing: border-box" placeholder="请输入搜索商品" confirm-type="search" bindinput="inputoperation" value="{{inputsearch}}" />
+  <button formType="submit" class="searchsubmit" hidden="{{searchsubmit?true:false}}" bindtap="searchbegin" style="width: 168rpx; height: 58rpx; display: flex; align-items: center; justify-content: center; box-sizing: border-box; left: 0rpx; top: 0rpx">搜索</button>
+</view>
+<view class="history message" hidden="{{historydatashow?false:true}}">
+  <view class="title">历史</view>
+  
+  <view class="right operation" catchtap="remove">清除</view>
+  <!-- <view class="operation">清除</view> -->
+  <text class="list" bindtap="gotodetail" wx:for="{{historydata}}">{{item}}</text>
+</view>
+<view class="hotsearch message">
+  <view class="title">热门搜索</view>
+  <view class="operation" bindtap="changeother">换一批</view>
+  <text class="list" wx:for="{{falg ? hotsearch1 : hotsearch2}}">{{item.message}}</text>
+</view>

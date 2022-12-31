@@ -1,0 +1,54 @@
+<view class="box">
+<view class="boxtext" style="margin-top: 15px;">管理我的账户</view>
+<view class="boxtop">
+    <view class="boxtops">
+        <view class="boximage"><image src="{{LoginImages}}"></image></view>
+        <view class="toptext">
+            <view class="text1"><text>{{Name}}</text></view>
+            <view class="text2"><text>用户名：{{Name}}</text></view>
+        </view>
+        <view class="icon">></view>
+    </view>
+</view>
+</view>
+<view class="mineaddres">
+    <view class="mineaddrestext1">
+        <view class="addrest1"><text>我的收货地址</text></view>
+        <view class="addrest2"><text>管理我的地址 ></text></view>
+    </view>
+    <view class="mineaddrestext2">
+        <view class="addrest1"><text>发票抬头管理</text></view>
+        <view class="addrest2"><text>管理增票资质 ></text></view>
+    </view>
+</view>
+
+<view class="passworduser">
+    <view class="mineaddrestext1">
+        <view class="addrest1"><text>账户与安全</text></view>
+        <view class="addrest2"><text>密码/实名认证管理 ></text></view>
+    </view>
+    <view class="password">
+        <view class="addrest1"><text>支付密码</text></view>
+        <view class="addrest2"><text>去设置 ></text></view>
+    </view>
+    <view class="password">
+        <view class="addrest1"><text>微信免密支付</text></view>
+        <view class="addrest2"><text>去开通 ></text></view>
+    </view>
+    <view class="setup">
+        <view class="addrest1"><text>隐私设置</text></view>
+        <view class="addrest2"><text> ></text></view>
+    </view>
+</view>
+
+<view class="mineaddres">
+    <view class="mineaddrestext1">
+        <view class="addrest1"><text>联系客服</text></view>
+        <view class="addrest2"><text>及时解答用户疑难 ></text></view>
+    </view>
+    <view class="mineaddrestext2">
+        <view class="addrest1"><text>建议反馈</text></view>
+        <view class="addrest2"><text>期待您的建议 ></text></view>
+    </view>
+</view>
+<button style="margin-top: 55rpx; color: #6C6C6C;" bindtap="exit">退出登录</button>

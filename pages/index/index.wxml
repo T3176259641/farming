@@ -1,0 +1,112 @@
+<!-- 首页布局代码 -->
+<navigator url="/pages/search/search"><view class="parents">
+  <view class="childs">
+    <view class="search">
+      <image src="/pages/images/search.png" style="width: 45rpx; height: 45rpx;"></image>
+    </view>
+    <view class="search_swiper">
+      <swiper style="height: {{Height}}rpx;"vertical autoplay="true" circular>
+        <swiper-item><view class="tx_tab">豌豆3.3折</view></swiper-item>
+        <swiper-item><view class="tx_tab">大连美枣樱桃</view></swiper-item>
+        <swiper-item><view class="tx_tab">山东大雪梨</view></swiper-item>
+      </swiper>
+    </view>
+    <view class="btn_parent">
+      <view class="btn_ok">
+        <view class="btn_ok2"><text>搜索</text></view>
+      </view>
+    </view>
+  </view>
+</view>
+</navigator>
+<!-- 商品icon介绍布局 -->
+<view class="shopping_parent">
+      <view class="shopping_view1">
+        <view class="cont_img" wx:for="{{shopping_view_ArryList}}">
+          <view class="image_shop">
+            <image src="{{item.images}}" style="width: 65rpx; height: 65rpx;" bindtap="NoCode"></image>
+          </view>
+          <view class="tx_sp">
+              <view>{{item.icon_tilte}}</view>
+          </view>
+        </view>
+      </view>
+</view>
+<!-- 农合秒杀布局 -->
+<view class="seckill_parent">
+  <view class="seckill_childs">
+      <view class="seckill_child1">
+        <view class="seckill_title">
+            <view class="tiltle">农合秒杀</view>
+        </view>
+        <view class="swiper_item">
+          <swiper circular autoplay="true" vertical style="height: {{seckillHeight}}rpx;">
+            <swiper-item wx:for="{{seckillList}}">
+              <view class="shopping_Parent_img">
+                <view class="shopping_Childs_img">
+                  <image src="{{item.img01}}"></image>
+                </view>
+                <view class="shopping_Childs_img">
+                  <image src="{{item.img02}}"></image>
+                </view>
+              </view>
+            </swiper-item>
+          </swiper>
+        </view>
+    </view>
+    <view class="seckill_child1">
+      <view class="seckill_Childs_Title">
+        <view class="seckill_child1">
+          <view class="seckill_title">
+              <view class="tiltle">排行榜</view>
+          </view>
+          <view class="swiper_item">
+          <swiper circular autoplay="true" style="height: {{seckillHeight}}rpx;">
+            <swiper-item wx:for="{{seckillList_childs}}">
+              <view class="shopping_Parent_img">
+                <view class="shopping_Childs_img">
+                  <image src="{{item.images}}"></image>
+                </view>
+                <view class="shopping_Childs_img">
+                  <image src="{{item.Image02}}"></image>
+                </view>
+              </view>
+            </swiper-item>
+          </swiper>
+         </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 商品展示部分布局 -->
+<view class="show_shopping_Parent">
+  <view class="show_shopping_Childs">
+    <view class="show_shopping">
+      <swiper circular autoplay indicator-color="rgba(0,0,0,.3)" 	indicator-active-color="#ffffff" indicator-dots style="height: {{show_swiper}}rpx;">
+        <swiper-item><image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic150.nipic.com%2Ffile%2F20171223%2F26485039_111425195031_2.jpg&refer=http%3A%2F%2Fpic150.nipic.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653104253&t=f63c351eda2b5d430d2dd368be422fc4" class="show_shopping_iamges"></image></swiper-item>
+        <swiper-item><image src="https://img2.baidu.com/it/u=2330386676,1639226166&fm=253&fmt=auto&app=138&f=PNG?w=500&h=889" class="show_shopping_iamges"></image></swiper-item>
+        <swiper-item><image src="https://img2.baidu.com/it/u=1137912452,935312338&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=675" class="show_shopping_iamges"></image></swiper-item>
+      </swiper>
+    </view>
+    <view class="show_shopping bottom"  wx:for="{{show_shopping_ListArray}}" data-img1="{{item.images_l01}}" data-img2="{{item.images_l02}}" data-img3="{{item.images_l03}}" data-title01="{{item.shoppingtitle}}" data-price="{{item.shoppingprice}}" data-num="{{item.shoppingnum}}" bindtap="navigatefun" wx:key="{{item.id}}">
+      <view class="show_shopping_Childs_img">
+          <image src="{{item.images_l01}}" class="show_shopping_iamges2"></image>
+      </view>
+      <view class="tx_align">
+        <view class="tx_shoppping">
+          <text>{{item.shoppingtitle}}</text>
+        </view>
+      </view>
+      <view class="price">
+        <view class="text_price_parent">
+          <text class="text_price1">￥</text>
+          <text class="text_price2">{{item.shoppingprice}}</text>
+        </view>
+      </view>
+      <view class="comment_parents">
+        <text>{{item.shoppingnum}}+评论 - {{item.shoppingevaluate}}%好评率</text>
+      </view>
+    </view>
+  </view>
+</view>
