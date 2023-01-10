@@ -76,7 +76,7 @@ Page({
       },
       {
         id:12,
-        images:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.16pic.com%2F00%2F52%2F88%2F16pic_5288692_b.jpg&refer=http%3A%2F%2Fpic.16pic.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653104042&t=cea402dfd459955c5136583dca88e39f',
+        images:'https://img.chemicalbook.com/SupplyImg/2018-12-28/201812281503066429560.jpg',
         Image02:'https://img2.baidu.com/it/u=3780924603,3943537956&fm=253&fmt=auto&app=138&f=JPEG?w=707&h=500'
       },
       {

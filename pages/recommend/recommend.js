@@ -16,7 +16,7 @@ Page({
         remmcommend_imglsit:[
             {
                 id:1,
-                img:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic321.nipic.com%2Ffile%2F20200831%2F32087183_160039305000_2.jpg&refer=http%3A%2F%2Fpic321.nipic.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653099300&t=8aeba00664c194d29f85ca7d6f0a1750'
+                img:'https://img10.360buyimg.com/imgzone/jfs/t1/217162/5/5096/146653/619862c1E5e4938d6/6a5e469501ca7a0b.jpg'
             },
             {
                 id:2,

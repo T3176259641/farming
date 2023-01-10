@@ -84,7 +84,7 @@
   <view class="show_shopping_Childs">
     <view class="show_shopping">
       <swiper circular autoplay indicator-color="rgba(0,0,0,.3)" 	indicator-active-color="#ffffff" indicator-dots style="height: {{show_swiper}}rpx;">
-        <swiper-item><image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic150.nipic.com%2Ffile%2F20171223%2F26485039_111425195031_2.jpg&refer=http%3A%2F%2Fpic150.nipic.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653104253&t=f63c351eda2b5d430d2dd368be422fc4" class="show_shopping_iamges"></image></swiper-item>
+        <swiper-item><image src="https://img10.360buyimg.com/imgzone/jfs/t1/217162/5/5096/146653/619862c1E5e4938d6/6a5e469501ca7a0b.jpg" class="show_shopping_iamges"></image></swiper-item>
         <swiper-item><image src="https://img2.baidu.com/it/u=2330386676,1639226166&fm=253&fmt=auto&app=138&f=PNG?w=500&h=889" class="show_shopping_iamges"></image></swiper-item>
         <swiper-item><image src="https://img2.baidu.com/it/u=1137912452,935312338&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=675" class="show_shopping_iamges"></image></swiper-item>
       </swiper>
